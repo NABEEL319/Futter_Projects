@@ -86,7 +86,7 @@ Widget cardInfo(String name) {
                     SizedBox(
                       width: 20,
                     ),
-                    Text('90S'),
+                    Text('90\$'),
                   ],
                 ),
                 Text("Quantity: 1"),

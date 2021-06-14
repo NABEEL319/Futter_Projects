@@ -66,6 +66,14 @@ Widget abc(String name) {
         name,
         style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
       ),
-      subtitle: Text('5.0(23 Reviews)'),
-      trailing: Text('S10'));
+      subtitle: Row(
+        children: [
+          Icon(
+            Icons.star,
+            color: Colors.yellow,
+          ),
+          Text('5.0(23 Reviews)'),
+        ],
+      ),
+      trailing: Text("\$10"));
 }

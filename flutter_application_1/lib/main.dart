@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/page1.dart';
 import 'package:flutter_application_1/page2.dart';
 import 'package:flutter_application_1/page3.dart';
+import 'package:flutter_application_1/page4.dart';
+import 'package:flutter_application_1/page5.dart';
+import 'package:flutter_application_1/page6.dart';
 
 void main() {
   // materialApp (home:) is lagaya hai ta ky context wala error na ayee..
@@ -65,7 +68,31 @@ class Hello extends StatelessWidget {
                       return Page3();
                     }));
                   },
-                  child: Text("3rd Page"))
+                  child: Text("3rd Page")),
+              OutlinedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Page4();
+                    }));
+                  },
+                  child: Text('List View')),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Page5();
+                    }));
+                  },
+                  child: Text("Grid View")),
+              OutlinedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return Page6();
+                    }));
+                  },
+                  child: Text('Drawer')),
             ],
           ),
         ),
